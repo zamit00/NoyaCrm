@@ -488,7 +488,7 @@
                         <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800">
                             <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                                 <span class="block text-xs text-slate-400 mb-1">הקלדה ויצוא ידני נחסכים:</span>
-                                <span class="text-lg font-bold text-slate-200">~12 דקות בממוצע לעובד/חודש</span>
+                                <span class="text-lg font-bold text-slate-200">~6 דקות בממוצע לעובד/חודש</span>
                             </div>
                             <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                                 <span class="block text-xs text-slate-400 mb-1">מניעת שגיאות אנוש:</span>
@@ -744,7 +744,7 @@
                 const count = parseInt(workersRange.value);
                 workersCountDisplay.textContent = count;
                 // Estimated formula: ~15 mins per worker per month saved via bulk automation & portal = count * 0.20 hours
-                const hours = Math.round(count * 0.20);
+                const hours = Math.round(count * 0.10);
                 hoursSavedDisplay.textContent = hours + ' שעות';
             }
 
